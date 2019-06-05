@@ -1,0 +1,10 @@
+/**index.wxss**/
+.mytext {
+  background: #F0F8FF;
+  width: 80%;
+  height: 150px
+}
+
+.bottom {
+  margin-top: 20px;
+}

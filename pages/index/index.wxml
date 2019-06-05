@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="mytext">
+    <textarea placeholder='请输入内容' bindconfirm='confirmEvent' bindinput='inputEvent'></textarea>
+  </view>
+  <view class='bottom'>
+    <button bindtap='setClipboard'>点击复制</button>
+  </view>
+</view>
