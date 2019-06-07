@@ -1,9 +1,10 @@
 <!--index.wxml-->
 <view class="container">
   <view class="mytext">
-    <textarea placeholder='请输入内容' bindconfirm='confirmEvent' bindinput='inputEvent'></textarea>
+    <textarea placeholder='请输入内容' bindconfirm='confirmEvent' bindinput='inputEvent' value='{{inputValue}}' ></textarea>
   </view>
   <view class='bottom'>
-    <button bindtap='setClipboard'>点击复制</button>
+    <button bindtap='setClipboard' class='button'>复制</button>
+    <button bindtap='clearText' class='button'>清空</button>
   </view>
 </view>

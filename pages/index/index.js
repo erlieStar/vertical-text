@@ -4,7 +4,8 @@ const app = getApp()
 
 Page({
   data: {
-    myText: '程序好像出错了'
+    myText: '程序好像出错了',
+    inputValue: null
   },
   confirmEvent: function(e) {
     console.log(e);
@@ -12,8 +13,10 @@ Page({
       myText: e.detail.value
     })
   },
-  inputEvent: function() {
-    console.log('inputEvent');
+  clearText: function(e) {
+    this.setData({
+      'inputValue': ''
+    })
   },
   setClipboard: function() {
     var previewText = this.data.myText;
